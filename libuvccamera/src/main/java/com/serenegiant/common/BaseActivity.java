@@ -26,7 +26,9 @@ package com.serenegiant.common;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.Looper;
 import android.support.annotation.NonNull;
@@ -278,11 +280,15 @@ public class BaseActivity extends Activity
 	 * @return true 外部ストレージへの書き込みパーミッションが有る
 	 */
 	protected boolean checkPermissionWriteExternalStorage() {
-		if (!PermissionCheck.hasWriteExternalStorage(this)) {
-			MessageDialogFragment.showDialog(this, REQUEST_PERMISSION_WRITE_EXTERNAL_STORAGE,
-				R.string.permission_title, R.string.permission_ext_storage_request,
-				new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE});
-			return false;
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S_V2) {
+			return Environment.isExternalStorageManager() || Environment.isExternalStorageEmulated();
+		} else {
+			if (!PermissionCheck.hasWriteExternalStorage(this)) {
+				MessageDialogFragment.showDialog(this, REQUEST_PERMISSION_WRITE_EXTERNAL_STORAGE,
+						R.string.permission_title, R.string.permission_ext_storage_request,
+						new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE});
+				return false;
+			}
 		}
 		return true;
 	}
