@@ -19,4 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "UVCCamera-Flutter-Android"
+rootProject.name = "UVCCamera-Flutter"
+include(":android")
