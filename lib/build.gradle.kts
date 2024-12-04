@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
-    `maven-publish`
-    signing
+    id("maven-publish")
+    id("signing")
 }
 
 version = findProperty("uvccamera.version") as String? ?: "0.0.0-SNAPSHOT"
