@@ -30,7 +30,7 @@ class UvcCameraDeviceEvent extends Equatable {
 
   @override
   List<Object?> get props => [
-    device,
-    type,
-  ];
+        device,
+        type,
+      ];
 }

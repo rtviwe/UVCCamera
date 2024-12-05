@@ -71,8 +71,7 @@ class _UvcCameraDevicesScreenState extends State<UvcCameraDevicesScreen> {
         return ListTile(
           leading: const Icon(Icons.videocam),
           title: Text(device.name),
-          subtitle: Text(
-              'Vendor ID: ${device.vendorId}, Product ID: ${device.productId}'),
+          subtitle: Text('Vendor ID: ${device.vendorId}, Product ID: ${device.productId}'),
           onTap: () {
             Navigator.push(
               context,

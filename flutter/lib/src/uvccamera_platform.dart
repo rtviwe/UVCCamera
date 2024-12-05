@@ -9,7 +9,6 @@ import 'uvccamera_resolution_preset.dart';
 import 'uvccamera_status_event.dart';
 
 class UvcCameraPlatform extends UvcCameraPlatformInterface {
-
   final _nativeMethodChannel = const MethodChannel('uvccamera/native');
   final _flutterMethodChannel = const MethodChannel('uvccamera/flutter');
 

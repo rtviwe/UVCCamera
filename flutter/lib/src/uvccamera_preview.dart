@@ -33,5 +33,4 @@ class UvcCameraPreview extends StatelessWidget {
       child: child,
     );
   }
-
 }

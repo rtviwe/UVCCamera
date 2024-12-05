@@ -36,8 +36,8 @@ class UvcCameraMode extends Equatable {
 
   @override
   List<Object?> get props => [
-    frameWidth,
-    frameHeight,
-    frameFormat,
-  ];
+        frameWidth,
+        frameHeight,
+        frameFormat,
+      ];
 }

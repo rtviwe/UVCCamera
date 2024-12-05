@@ -41,9 +41,9 @@ class UvcCameraStatus extends Equatable {
 
   @override
   List<Object?> get props => [
-    statusClass,
-    event,
-    selector,
-    statusAttribute,
-  ];
+        statusClass,
+        event,
+        selector,
+        statusAttribute,
+      ];
 }

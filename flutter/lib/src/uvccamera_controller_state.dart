@@ -6,7 +6,6 @@ import 'uvccamera_mode.dart';
 /// The state of a [UvcCameraController].
 @immutable
 class UvcCameraControllerState {
-
   /// True after [UvcCameraController.initialize] has completed successfully.
   final bool isInitialized;
 
@@ -28,9 +27,9 @@ class UvcCameraControllerState {
   /// Creates a [UvcCameraControllerState] object for an uninitialized controller.
   const UvcCameraControllerState.uninitialized(UvcCameraDevice device)
       : this(
-    isInitialized: false,
-    device: device,
-  );
+          isInitialized: false,
+          device: device,
+        );
 
   /// Creates a modified copy of this object.
   ///
@@ -55,5 +54,4 @@ class UvcCameraControllerState {
         'previewMode: $previewMode'
         ')';
   }
-
 }

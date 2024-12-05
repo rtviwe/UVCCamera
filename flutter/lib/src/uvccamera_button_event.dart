@@ -32,8 +32,8 @@ class UvcCameraButtonEvent extends Equatable {
 
   @override
   List<Object?> get props => [
-    cameraId,
-    button,
-    state,
-  ];
+        cameraId,
+        button,
+        state,
+      ];
 }
