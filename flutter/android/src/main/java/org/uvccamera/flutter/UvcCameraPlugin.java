@@ -1,4 +1,4 @@
-package org.uvccamera;
+package org.uvccamera.flutter;
 
 import android.content.Context;
 import android.content.pm.PackageManager;

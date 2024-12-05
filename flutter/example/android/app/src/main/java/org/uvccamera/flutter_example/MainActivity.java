@@ -1,4 +1,4 @@
-package org.uvccamera_example;
+package org.uvccamera.flutter_example;
 
 import io.flutter.embedding.android.FlutterActivity;
 

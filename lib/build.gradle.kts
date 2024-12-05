@@ -67,7 +67,7 @@ publishing {
 
             pom {
                 name = "org.uvccamera:${project.name}"
-                description = "UVC Camera Library"
+                description = "USB Video (UVC) Camera Library for Android"
                 url = "https://uvccamera.org"
 
                 licenses {

@@ -10,7 +10,7 @@ version = run {
 }
 
 android {
-    namespace = "org.uvccamera"
+    namespace = "org.uvccamera.flutter"
     compileSdk = 34
 
     defaultConfig {

@@ -26,5 +26,5 @@ flutter:
   plugin:
     platforms:
       android:
-        package: org.uvccamera
+        package: org.uvccamera.flutter
         pluginClass: UvcCameraPlugin
