@@ -1,8 +1,8 @@
 name: uvccamera
-description: "A UVC Camera plugin for Flutter."
+description: A USB Video Class (UVC) camera plugin for Flutter based on UVCCamera library for Android.
 version: 0.0.0-SNAPSHOT
 repository: https://github.com/alexey-pelykh/UVCCamera/tree/main/flutter
-issue_tracker: https://github.com/alexey-pelykh/UVCCamera/issues?q=is%3Aopen+is%3Aissue+label%3Aflutter
+issue_tracker: https://github.com/alexey-pelykh/UVCCamera/issues
 homepage: https://uvccamera.org
 platforms:
   android:

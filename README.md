@@ -5,6 +5,8 @@
 [![Maven Central Version](https://img.shields.io/maven-central/v/org.uvccamera/lib)](https://mvnrepository.com/artifact/org.uvccamera/lib)
 [![Pub Version](https://img.shields.io/pub/v/uvccamera)](https://pub.dev/packages/uvccamera)
 
+A USB Video Class (UVC) camera library for Android and plugin for Flutter.
+
 This project is a hard fork of the original [UVCCamera by saki4510t](https://github.com/saki4510t/UVCCamera) and is
 brought to you by [Alexey Pelykh](https://alexey-pelykh.com) with a great gratitude to the original project's
 author [saki4510t](https://github.com/saki4510t/) and its community of contributors. It includes some improvements from

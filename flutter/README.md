@@ -4,7 +4,8 @@
 [![GitHub License](https://img.shields.io/github/license/alexey-pelykh/UVCCamera)](./LICENSE)
 [![Pub Version](https://img.shields.io/pub/v/uvccamera)](https://pub.dev/packages/uvccamera)
 
-A [UVCCamera](https://uvccamera.org) plugin for Flutter brought to you by [Alexey Pelykh](https://alexey-pelykh.com).
+A USB Video Class (UVC) camera plugin for Flutter based on [UVCCamera](https://uvccamera.org) library for Android,
+brought to you by [Alexey Pelykh](https://alexey-pelykh.com).
 
 ## Usage
 
