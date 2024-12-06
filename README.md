@@ -32,7 +32,8 @@ implementation("org.uvccamera:lib:0.1.0")
 
 ### Flutter
 
-The Flutter plugin is available on pub.dev. To use it in your Flutter project, add the following dependency:
+The Flutter plugin is available on [pub.dev](https://pub.dev/packages/uvccamera). To use it in your Flutter project, add
+the following dependency:
 
 ```yaml
 dependencies:
