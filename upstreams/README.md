@@ -10,4 +10,4 @@ The original UVCCamera, used as a base for this project.
 ## [`hthetiot`](https://github.com/hthetiot/UVCCamera)
 
 A fork behind the [saki4510t/UVCCamera#709](https://github.com/saki4510t/UVCCamera/pull/709) pull-request, see
-[hthetiot.diff](./hthetiot.diff) and [hthetiot.patch](./hthetiot.patch).
+[hthetiot.patches](./hthetiot.patches) for the changes pulled in.
