@@ -5,7 +5,7 @@
 * (ref) lib: move UI to usbCameraCommon
 * (ref) lib: namespace change
 * (ref) flutter: native plugin
-* (fix) set buffer geometry and format on capture target by
+* (fix) set buffer geometry and format on capture target
 * (feat) flutter: video recording
 
 **Full Changelog**: [0.0.2...0.0.3](https://github.com/alexey-pelykh/UVCCamera/compare/0.0.2...0.0.3)
