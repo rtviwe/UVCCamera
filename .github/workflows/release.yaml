@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
+      id-token: write
       contents: read
       packages: write
 
@@ -35,7 +36,8 @@ jobs:
       - name: Setup Flutter SDK
         uses: flutter-actions/setup-flutter@v3
 
-      - uses: flutter-actions/setup-pubdev-credentials@v1
+      - name: Setup pub.dev credentials
+        uses: flutter-actions/setup-pubdev-credentials@v1
 
       - name: Cache Gradle packages
         uses: actions/cache@v4
@@ -62,7 +64,7 @@ jobs:
           OSSRH_TOKEN: ${{ secrets.OSSRH_TOKEN }}
         run: ./gradlew :lib:publish -Puvccamera.version=${{ github.ref_name }}
 
-      - name: Publish FLutter plugin
+      - name: Publish Flutter plugin
         working-directory: flutter
         run: |
           sed -i 's/version: 0.0.0-SNAPSHOT/version: ${{ github.ref_name }}/g' pubspec.yaml
