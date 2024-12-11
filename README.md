@@ -1,7 +1,3 @@
----
-maxwidth: 72em
----
-
 # UVCCamera
 
 [![GitHub Repo stars](https://img.shields.io/github/stars/alexey-pelykh/UVCCamera?style=flat&logo=github)](https://github.com/alexey-pelykh/UVCCamera)
