@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.8
+
+* (fix) release: flutter example readme formatting by [@alexey-pelykh](https://github.com/alexey-pelykh)
+
+**Full Changelog**: [0.0.7…0.0.8](https://github.com/alexey-pelykh/UVCCamera/compare/0.0.7...0.0.8)
+
 ## 0.0.7
 
 * (fix) release: EXAMPLE.md -> example.md by [@alexey-pelykh](https://github.com/alexey-pelykh)
