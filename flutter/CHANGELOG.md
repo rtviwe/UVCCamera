@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.7
+
+* (fix) release: EXAMPLE.md -> example.md by [@alexey-pelykh](https://github.com/alexey-pelykh)
+
 ## 0.0.6
 
 * (imp) flutter: example README.md by [@alexey-pelykh](https://github.com/alexey-pelykh)
