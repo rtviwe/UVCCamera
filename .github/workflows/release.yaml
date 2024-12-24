@@ -103,7 +103,6 @@ jobs:
           (cd example \
             && sed -i 's/uvccamera:/uvccamera: ${{ github.ref_name }}/g' pubspec.yaml \
             && sed -i '/    path: ..\//d' pubspec.yaml \
-            && flutter pub get \
             && for EXAMPLE_FILE in pubspec.yaml lib/*.dart; do ( \
               echo -n "\n## [${EXAMPLE_FILE}](https://github.com/alexey-pelykh/UVCCamera/blob/main/flutter/example/${EXAMPLE_FILE})\n" >> README.md \
               && echo -n "\n\`\`\`${EXAMPLE_FILE##*.}\n" >> README.md \
