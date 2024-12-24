@@ -105,7 +105,7 @@ jobs:
             && sed -i '/    path: ..\//d' pubspec.yaml \
             && for EXAMPLE_FILE in pubspec.yaml lib/*.dart; do ( \
               echo "" >> README.md \
-              echo "## [${EXAMPLE_FILE}](https://github.com/alexey-pelykh/UVCCamera/blob/main/flutter/example/${EXAMPLE_FILE})" >> README.md \
+              && echo "## [${EXAMPLE_FILE}](https://github.com/alexey-pelykh/UVCCamera/blob/main/flutter/example/${EXAMPLE_FILE})" >> README.md \
               && echo "\`\`\`${EXAMPLE_FILE##*.}" >> README.md \
               && cat "$EXAMPLE_FILE" >> README.md \
               && echo "\`\`\`" >> README.md \
