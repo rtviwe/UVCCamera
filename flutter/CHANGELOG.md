@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.0.6
+
+* (imp) flutter: example README.md by [@alexey-pelykh](https://github.com/alexey-pelykh)
+* (docs) readme: development & contribution by [@alexey-pelykh](https://github.com/alexey-pelykh)
+
+**Full Changelog**: [0.0.5…0.0.6](https://github.com/alexey-pelykh/UVCCamera/compare/0.0.5...0.0.6)
+
 ## 0.0.5
 
 * (docs) flutter: example README by [@alexey-pelykh](https://github.com/alexey-pelykh)
