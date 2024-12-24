@@ -4,6 +4,8 @@
 
 * (fix) release: EXAMPLE.md -> example.md by [@alexey-pelykh](https://github.com/alexey-pelykh)
 
+**Full Changelog**: [0.0.6…0.0.7](https://github.com/alexey-pelykh/UVCCamera/compare/0.0.6...0.0.7)
+
 ## 0.0.6
 
 * (imp) flutter: example README.md by [@alexey-pelykh](https://github.com/alexey-pelykh)
