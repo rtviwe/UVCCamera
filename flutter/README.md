@@ -10,4 +10,4 @@ brought to you by [Alexey Pelykh](https://alexey-pelykh.com).
 ## Usage
 
 The plugin's API is intentionally kept similar to the [camera](https://pub.dev/packages/camera) package. See the
-[example](https://github.com/alexey-pelykh/UVCCamera/tree/main/flutter/example) for an app that uses the plugin.
+[example](https://pub.dev/packages/uvccamera/example) for an app that uses the plugin.
