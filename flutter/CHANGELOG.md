@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.0.5
+
+* (docs) flutter: example README by [@alexey-pelykh](https://github.com/alexey-pelykh)
+* (imp) flutter: package score by [@alexey-pelykh](https://github.com/alexey-pelykh)
+* (imp) ci: upload Flutter example artifact by [@alexey-pelykh](https://github.com/alexey-pelykh)
+* (imp) keystore by [@alexey-pelykh](https://github.com/alexey-pelykh)
+* (fix) lib: USB device permission intent to support FLAG_MUTABLE on API 34+ by [@alexey-pelykh](https://github.com/alexey-pelykh)
+* (fix) lib: consumer ProGuard rules by [@alexey-pelykh](https://github.com/alexey-pelykh)
+
+**Full Changelog**: [0.0.4…0.0.5](https://github.com/alexey-pelykh/UVCCamera/compare/0.0.4...0.0.5)
+
 ## 0.0.4
 
 * (imp) flutter: unify UvcCameraController state checks by [@jhionan](https://github.com/jhionan)
