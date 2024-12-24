@@ -113,7 +113,7 @@ jobs:
 
           # NOTE: https://github.com/dart-lang/pub-dev/issues/8436
           (cd example \
-            && mv README.md EXAMPLE.md \
+            && mv README.md example.md \
           )
 
           # NOTE: https://github.com/dart-lang/pub-dev/issues/3041
