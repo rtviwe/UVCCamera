@@ -11,7 +11,7 @@ on:
 jobs:
 
   package:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     permissions:
       contents: read
@@ -126,7 +126,7 @@ jobs:
   publish-github-pages:
     if: ${{ github.event_name == 'push' && github.ref_name == 'main' }}
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     permissions:
       contents: read
