@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.0.10
+
+* (chore) gradle 8.12 by [@alexey-pelykh](https://github.com/alexey-pelykh)
+* (chore) upgrade to Flutter 3.29.0 by [@alexey-pelykh](https://github.com/alexey-pelykh)
+
+**Full Changelog**: [0.0.9…0.0.10](https://github.com/alexey-pelykh/UVCCamera/compare/0.0.9...0.0.10)
+
 ## 0.0.9
 
 * (imp) flutter: support Impeller by [@alexey-pelykh](https://github.com/alexey-pelykh)
