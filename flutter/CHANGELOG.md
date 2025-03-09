@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.0.12
+
+* (imp) flutter: video recording state management by [@alexey-pelykh](https://github.com/alexey-pelykh)
+* (fix) flutter: takePicture callback to be called once by [@alexey-pelykh](https://github.com/alexey-pelykh)
+
+**Full Changelog**: [0.0.10 … 0.0.11](https://github.com/alexey-pelykh/UVCCamera/compare/0.0.11...0.0.12)
+
 ## 0.0.11
 
 * (fix) flutter: format on publish by [@alexey-pelykh](https://github.com/alexey-pelykh)
