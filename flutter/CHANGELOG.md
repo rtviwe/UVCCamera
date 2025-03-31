@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.0.13
+
+* (fix) UVCCamera.getPreviewSize(): compare width and height, not or by [@alexey-pelykh](https://github.com/alexey-pelykh)
+* (chore) gradle 8.13 and AGP 8.9.1 by [@alexey-pelykh](https://github.com/alexey-pelykh)
+* (chore) flutter: use 3.29.2 by [@alexey-pelykh](https://github.com/alexey-pelykh)
+
+**Full Changelog**: [0.0.12 … 0.0.13](https://github.com/alexey-pelykh/UVCCamera/compare/0.0.12...0.0.13)
+
 ## 0.0.12
 
 * (imp) flutter: video recording state management by [@alexey-pelykh](https://github.com/alexey-pelykh)
