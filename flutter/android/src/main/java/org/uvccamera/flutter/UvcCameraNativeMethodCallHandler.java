@@ -427,6 +427,45 @@ import io.flutter.plugin.common.MethodChannel;
                     result.error(e.getClass().getSimpleName(), e.getMessage(), null);
                 }
             }
+            case "setZoomLevel" -> {
+                final var cameraId = call.<Integer>argument("cameraId");
+                if (cameraId == null) {
+                    result.error("InvalidArgument", "cameraId is required", null);
+                    return;
+                }
+
+                final var zoomLevel = call.<Integer>argument("zoomLevel");
+                if (zoomLevel == null) {
+                    result.error("InvalidArgument", "zoomLevel is required", null);
+                    return;
+                }
+
+                try {
+                    uvcCameraPlatform.setZoomLevel(cameraId, zoomLevel);
+                } catch (final Exception e) {
+                    result.error(e.getClass().getSimpleName(), e.getMessage(), null);
+                    return;
+                }
+
+                result.success(null);
+            }
+            case "getZoomLevel" -> {
+                final var cameraId = call.<Integer>argument("cameraId");
+                if (cameraId == null) {
+                    result.error("InvalidArgument", "cameraId is required", null);
+                    return;
+                }
+
+                int zoomLevel;
+                try {
+                    zoomLevel = uvcCameraPlatform.getZoomLevel(cameraId);
+                } catch (final Exception e) {
+                    result.error(e.getClass().getSimpleName(), e.getMessage(), null);
+                    return;
+                }
+
+                result.success(zoomLevel);
+            }
             case "startVideoRecording" -> {
                 final var cameraId = call.<Integer>argument("cameraId");
                 if (cameraId == null) {

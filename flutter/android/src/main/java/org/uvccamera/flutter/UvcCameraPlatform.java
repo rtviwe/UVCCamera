@@ -1167,6 +1167,40 @@ import io.flutter.view.TextureRegistry;
     }
 
     /**
+     * Sets the zoom level for the specified camera
+     *
+     * @param cameraId  the camera ID
+     * @param zoomLevel the zoom level (0 to 100)
+     */
+    public void setZoomLevel(final int cameraId, final int zoomLevel) {
+        Log.v(TAG, "setZoomLevel: cameraId=" + cameraId + ", zoomLevel=" + zoomLevel);
+
+        final var cameraResources = camerasResources.get(cameraId);
+        if (cameraResources == null) {
+            throw new IllegalArgumentException("Camera resources not found: " + cameraId);
+        }
+
+        cameraResources.camera().setZoom(zoomLevel);
+    }
+
+    /**
+     * Gets the zoom level for the specified camera
+     *
+     * @param cameraId the camera ID
+     * @return the zoom level (0 to 100)
+     */
+    public int getZoomLevel(final int cameraId) {
+        Log.v(TAG, "getZoomLevel: cameraId=" + cameraId);
+
+        final var cameraResources = camerasResources.get(cameraId);
+        if (cameraResources == null) {
+            throw new IllegalArgumentException("Camera resources not found: " + cameraId);
+        }
+
+        return cameraResources.camera().getZoom();
+    }
+
+    /**
      * Finds the UVC camera device by name
      *
      * @param deviceName the name of the UVC camera device

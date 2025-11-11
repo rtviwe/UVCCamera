@@ -213,6 +213,18 @@ class UvcCameraController extends ValueNotifier<UvcCameraControllerState> {
     }
   }
 
+  /// Sets the zoom level for the camera.
+  Future<void> setZoomLevel(int zoomLevel) async {
+    _ensureInitializedNotDisposed();
+    await UvcCameraPlatformInterface.instance.setZoomLevel(_cameraId!, zoomLevel);
+  }
+
+  /// Gets the zoom level for the camera.
+  Future<int> getZoomLevel() async {
+    _ensureInitializedNotDisposed();
+    return await UvcCameraPlatformInterface.instance.getZoomLevel(_cameraId!);
+  }
+
   /// Returns a widget showing a live camera preview.
   Widget buildPreview() {
     _ensureInitializedNotDisposed();

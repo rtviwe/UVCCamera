@@ -218,6 +218,20 @@ class UvcCameraPlatform extends UvcCameraPlatformInterface {
   }
 
   @override
+  Future<void> setZoomLevel(int cameraId, int zoomLevel) async {
+    await _nativeMethodChannel.invokeMethod<void>('setZoomLevel', {'cameraId': cameraId, 'zoomLevel': zoomLevel});
+  }
+
+  @override
+  Future<int> getZoomLevel(int cameraId) async {
+    final result = await _nativeMethodChannel.invokeMethod<int>('getZoomLevel', {'cameraId': cameraId});
+    if (result == null) {
+      throw PlatformException(code: 'UNKNOWN', message: 'Unable to get zoom level for camera: $cameraId');
+    }
+    return result;
+  }
+
+  @override
   Stream<UvcCameraDeviceEvent> get deviceEventStream {
     return _deviceEventStream ??= _deviceEventChannel.receiveBroadcastStream().map((event) {
       return UvcCameraDeviceEvent.fromMap(event);
